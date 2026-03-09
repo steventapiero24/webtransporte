@@ -107,7 +107,7 @@ export const usePageAnimations = (refs) => {
         y: -1800,
         duration: 18,
         ease: "power1.inOut"
-      }, "+=0.5");
+      }, "+=0.1");
 
       const nodes = gsap.utils.toArray(".bg-image-node");
       nodes.forEach((node) => {
@@ -132,7 +132,7 @@ export const usePageAnimations = (refs) => {
         scrollTrigger: {
           trigger: pinnedSectionRef.current,
           start: "top top",
-          end: "+=400%", 
+          end: "+=100%", 
           pin: true,
           scrub: true,
           anticipatePin: 1

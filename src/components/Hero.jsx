@@ -51,7 +51,7 @@ const Hero = ({ heroRef, titleContainerRef, textRef }) => {
         <div className="absolute inset-0 w-full h-full">
           <img
             src="https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg?auto=compress&cs=tinysrgb&w=1920"
-            className="w-full h-full object-cover brightness-[0.35] contrast-125 scale-105"
+            className="w-full h-full object-cover brightness-[0.40] contrast-125 scale-105"
             alt="Camión pesado"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/90" />
@@ -59,10 +59,10 @@ const Hero = ({ heroRef, titleContainerRef, textRef }) => {
 
         <div className="relative z-20 text-center px-6 max-w-[1600px] w-full mt-32">
           <div ref={titleContainerRef} className="mb-24">
-            <h1 className="text-[12vw] font-black leading-[0.75] tracking-tighter uppercase text-white drop-shadow-2xl">
+            <h1 className="text-[8vw] font-black leading-[0.75] tracking-tighter uppercase text-white drop-shadow-2xl">
               Carga Inteligente.
             </h1>
-            <h1 className="text-[12vw] font-black leading-[0.75] tracking-tighter uppercase text-zinc-600/60 drop-shadow-2xl">
+            <h1 className="text-[8vw] font-black leading-[0.75] tracking-tighter uppercase text-zinc-600/80 drop-shadow-2xl">
               Ruta Segura.
             </h1>
           </div>
@@ -79,7 +79,7 @@ const Hero = ({ heroRef, titleContainerRef, textRef }) => {
               <div className="absolute inset-0 bg-red-600/20 rounded-full animate-ping duration-[4000ms]" />
               <div className="w-2 h-2 bg-red-600 rounded-full shadow-[0_0_20px_#dc2626]" />
             </div>
-            <span className="text-[10px] uppercase tracking-[0.6em] font-black text-white/40 animate-pulse">
+            <span className="text-[15px] uppercase tracking-[0.6em] font-black text-white/40 animate-pulse">
               Sistema Activo / Monitoreo de Ruta en Tiempo Real
             </span>
           </div>

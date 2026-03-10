@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
+import { imagesLogistics } from '../hooks/utils';
 
 const LogisticSection = () => {
   return (
@@ -31,19 +32,18 @@ const LogisticSection = () => {
         </div>
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10">
-          {[1, 2, 3, 4].map((i) => (
+          {imagesLogistics.map((image, i) => (
             <div
-              key={i}
+              key={image.id}
               className={`collage-item aspect-[3/4.5] rounded-[3.5rem] overflow-hidden bg-zinc-100 shadow-xl ${
                 i % 2 === 0 ? 'mt-24' : ''
               }`}
             >
               <img
-                src={`https://images.pexels.com/photos/${
-                  i * 123456 + 1105666
-                }/pexels-photo-${i * 123456 + 1105666}.jpeg?auto=compress&cs=tinysrgb&w=800`}
-                className="w-full h-full object-cover grayscale hover:grayscale-0 scale-110 hover:scale-100 transition-all duration-1000 ease-out"
-                alt="Detalle Logístico"
+                src={image.link}
+                loading="lazy"
+                className="w-full h-full object-cover grayscale hover:grayscale-0 scale-110 hover:scale-100 transition-all duration-1000 ease-out cursor-pointer"
+                alt={`Detalle Logístico ${image.id}`}
               />
             </div>
           ))}

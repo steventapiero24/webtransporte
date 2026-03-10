@@ -10,7 +10,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
         </button>
         <div className="flex flex-col space-y-6 text-center">
           {['Seguridad', 'Tecnología', 'Nosotros', 'Carreras', 'Noticias'].map((item, i) => (
-            <div key={i} className="group overflow-hidden">
+            <div key={i} className="group">
               <h2 className="text-6xl md:text-8xl font-black tracking-tighter italic hover:text-red-600 cursor-pointer transition-all transform hover:scale-110 duration-500">
                 {item}
               </h2>

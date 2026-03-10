@@ -3,22 +3,22 @@ import { Plus } from 'lucide-react';
 
 const Hero = ({ heroRef, titleContainerRef, textRef }) => {
   const galleryImages = [
-    { pos: "top-[15%] left-[8%]", speed: "1.1", url: "https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=800" },
-    { pos: "top-[10%] right-[20%]", speed: "0.8", url: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=800" },
-    { pos: "top-[40%] left-[3%]", speed: "1.4", url: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800" },
-    { pos: "bottom-[15%] right-[5%]", speed: "1.2", url: "https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=800" },
-    { pos: "bottom-[5%] left-[15%]", speed: "1.5", url: "https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=800" },
+    { pos: "top-[15%] left-[8%]", speed: "1.1", url: "src/assets/2 (3).jpg" },
+    { pos: "top-[10%] right-[20%]", speed: "0.8", url: "src/assets/533.jpg" },
+    { pos: "top-[40%] left-[3%]", speed: "1.4", url: "src/assets/1296.jpg" },
+    { pos: "bottom-[15%] right-[5%]", speed: "1.2", url: "src/assets/1333.jpg" },
+    { pos: "bottom-[5%] left-[15%]", speed: "1.5", url: "src/assets/69995.jpg" },
   ];
 
   return (
     <section ref={heroRef} className="hero-section relative h-screen w-full flex items-center justify-center bg-[#050505] overflow-hidden">
       {/* GALERÍA DE FONDO */}
       <div className="background-gallery-container absolute inset-0 w-full h-full opacity-0 scale-90 pointer-events-none z-0">
-        <div className="gallery-center-content absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center z-10 w-full max-w-2xl px-10 pointer-events-auto">
+        <div className="gallery-center-content absolute top-170 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center z-10 w-full max-w-2xl px-10 pointer-events-auto">
           <h2 className="text-white text-4xl md:text-5xl font-black tracking-tighter leading-[1] mb-6 drop-shadow-lg">
             El Futuro es <span className="text-zinc-600">Autónomo.</span>
           </h2>
-          <p className="text-zinc-400 text-sm md:text-base font-light mb-8 leading-relaxed max-w-md mx-auto opacity-80">
+          <p className="text-zinc-400 text-sm md:text-base font-regular mb-8 leading-relaxed max-w-md mx-auto">
             Descubre la nueva generación de logística pesada impulsada por nuestra IA propietaria de alta precisión.
           </p>
           <button className="inline-flex items-center space-x-3 bg-white text-black px-6 py-3 rounded-full font-black text-[9px] uppercase tracking-[0.2em] hover:bg-red-600 hover:text-white transition-all duration-500 group shadow-xl">
@@ -50,8 +50,8 @@ const Hero = ({ heroRef, titleContainerRef, textRef }) => {
       <div className="hero-main-container relative z-20 w-full h-full flex flex-col items-center justify-center overflow-hidden bg-zinc-900 shadow-[0_0_100px_rgba(0,0,0,1)] origin-center">
         <div className="absolute inset-0 w-full h-full">
           <img
-            src="https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg?auto=compress&cs=tinysrgb&w=1920"
-            className="w-full h-full object-cover brightness-[0.40] contrast-125 scale-105"
+            src="src/assets/hero-image.jpg"
+            className="w-full h-full object-cover brightness-[0.7] contrast-125 scale-105"
             alt="Camión pesado"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/90" />

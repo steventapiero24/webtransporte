@@ -9,7 +9,7 @@ const ParallaxSection = ({ parallaxSectionRef }) => {
     >
       <div className="parallax-bg absolute inset-0 w-full h-[140%] -top-[20%]">
         <img
-          src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          src="src/assets/paralax.jpg"
           className="w-full h-full object-cover brightness-[0.35] grayscale-[0.2]"
           alt="Logística Global"
         />

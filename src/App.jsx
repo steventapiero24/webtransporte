@@ -8,6 +8,7 @@ import PinnedOperationSection from './components/PinnedOperationSection';
 import ParallaxSection from './components/ParallaxSection';
 import CarouselSection from './components/CarouselSection';
 import Footer from './components/Footer';
+import TittleCarrusel from './components/TittleCarrusel';
 
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -48,6 +49,7 @@ const App = () => {
       <LogisticSection />
       <PinnedOperationSection pinnedSectionRef={pinnedSectionRef} />
       <ParallaxSection parallaxSectionRef={parallaxSectionRef} />
+      <TittleCarrusel />
       <CarouselSection 
         carouselWrapperRef={carouselWrapperRef}
         carouselContentRef={carouselContentRef}

@@ -19,7 +19,7 @@ export const usePageAnimations = (refs) => {
 
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 1.2,
+      duration: .2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       smoothWheel: true,
     });
@@ -39,11 +39,13 @@ export const usePageAnimations = (refs) => {
       textElement.innerHTML = "";
       words.forEach(word => {
         const span = document.createElement("span");
-        span.innerText = word + " ";
+        span.innerText = word;
         span.style.opacity = "0.15";
         span.style.display = "inline-block";
         span.style.filter = "blur(4px)";
         span.style.transition = "all 0.4s ease";
+        span.style.marginRight = "0.8rem";
+        span.style.marginBottom = "0.5rem";
         span.className = "word-span";
         textElement.appendChild(span);
       });
@@ -132,7 +134,7 @@ export const usePageAnimations = (refs) => {
         scrollTrigger: {
           trigger: pinnedSectionRef.current,
           start: "top top",
-          end: "+=100%", 
+          end: "+=400%", 
           pin: true,
           scrub: true,
           anticipatePin: 1

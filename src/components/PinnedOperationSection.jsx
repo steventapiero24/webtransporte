@@ -28,7 +28,7 @@ const PinnedOperationSection = ({ pinnedSectionRef }) => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 w-full h-full items-center">
           <div className="hidden lg:block relative aspect-square rounded-[5rem] overflow-hidden shadow-2xl bg-zinc-100 border border-zinc-100">
             <img
-              src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260"
+              src="src/assets/camion-ia.jpg"
               className="w-full h-full object-cover"
               alt="Logística Inteligente"
             />

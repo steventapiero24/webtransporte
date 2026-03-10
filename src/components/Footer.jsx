@@ -6,7 +6,7 @@ const Footer = () => {
   const socialIcons = [Linkedin, Youtube, Twitter];
 
   return (
-    <footer className="relative w-full min-h-screen bg-[#c81041] overflow-hidden flex items-center px-10 md:px-24 py-32 text-white z-30">
+    <footer className="relative w-full min-h-screen bg-red-600 overflow-hidden flex items-center px-10 md:px-24 py-32 text-white z-30">
       <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_70%_30%,_transparent_0%,_#8c0b2d_100%)] opacity-90" />
       <div className="relative z-10 w-full max-w-[1700px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16">
         {/* Left Section */}

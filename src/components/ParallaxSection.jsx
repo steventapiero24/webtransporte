@@ -1,5 +1,6 @@
 import React from 'react';
 import { Plus } from 'lucide-react';
+import parallaxImg from '../assets/paralax.jpg';
 
 const ParallaxSection = ({ parallaxSectionRef }) => {
   return (
@@ -9,7 +10,7 @@ const ParallaxSection = ({ parallaxSectionRef }) => {
     >
       <div className="parallax-bg absolute inset-0 w-full h-[140%] -top-[20%]">
         <img
-          src="src/assets/paralax.jpg"
+          src={parallaxImg}
           className="w-full h-full object-cover brightness-[0.35] grayscale-[0.2]"
           alt="Logística Global"
         />

@@ -1,13 +1,19 @@
 import React from 'react';
 import { Plus } from 'lucide-react';
+import img1 from '../assets/2 (3).jpg';
+import img2 from '../assets/533.jpg';
+import img3 from '../assets/1296.jpg';
+import img4 from '../assets/1333.jpg';
+import img5 from '../assets/69995.jpg';
+import heroImage from '../assets/hero-image.jpg';
 
 const Hero = ({ heroRef, titleContainerRef, textRef }) => {
   const galleryImages = [
-    { pos: "top-[15%] left-[8%]", speed: "1.1", url: "src/assets/2 (3).jpg" },
-    { pos: "top-[10%] right-[20%]", speed: "0.8", url: "src/assets/533.jpg" },
-    { pos: "top-[40%] left-[3%]", speed: "1.4", url: "src/assets/1296.jpg" },
-    { pos: "bottom-[15%] right-[5%]", speed: "1.2", url: "src/assets/1333.jpg" },
-    { pos: "bottom-[5%] left-[15%]", speed: "1.5", url: "src/assets/69995.jpg" },
+    { pos: "top-[15%] left-[8%]", speed: "1.1", url: img1 },
+    { pos: "top-[10%] right-[20%]", speed: "0.8", url: img2 },
+    { pos: "top-[40%] left-[3%]", speed: "1.4", url: img3 },
+    { pos: "bottom-[15%] right-[5%]", speed: "1.2", url: img4 },
+    { pos: "bottom-[5%] left-[15%]", speed: "1.5", url: img5 },
   ];
 
   return (
@@ -50,7 +56,7 @@ const Hero = ({ heroRef, titleContainerRef, textRef }) => {
       <div className="hero-main-container relative z-20 w-full h-full flex flex-col items-center justify-center overflow-hidden bg-zinc-900 shadow-[0_0_100px_rgba(0,0,0,1)] origin-center">
         <div className="absolute inset-0 w-full h-full">
           <img
-            src="src/assets/hero-image.jpg"
+            src={heroImage}
             className="w-full h-full object-cover brightness-[0.7] contrast-125 scale-105"
             alt="Camión pesado"
           />

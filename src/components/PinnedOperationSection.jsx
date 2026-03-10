@@ -1,4 +1,5 @@
 import React from 'react';
+import camionIAImg from '../assets/camion-ia.jpg';
 
 const PinnedOperationSection = ({ pinnedSectionRef }) => {
   const steps = [
@@ -28,7 +29,7 @@ const PinnedOperationSection = ({ pinnedSectionRef }) => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 w-full h-full items-center">
           <div className="hidden lg:block relative aspect-square rounded-[5rem] overflow-hidden shadow-2xl bg-zinc-100 border border-zinc-100">
             <img
-              src="src/assets/camion-ia.jpg"
+              src={camionIAImg}
               className="w-full h-full object-cover"
               alt="Logística Inteligente"
             />
